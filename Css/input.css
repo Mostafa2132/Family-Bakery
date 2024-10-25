@@ -136,13 +136,13 @@
 
 body {
   overflow: hidden;
-  /* font-family: "Alegreya", serif; */
+  font-family: "Alegreya", serif;
 }
 
 .loading {
   position: fixed;
   inset: 0;
-  z-index: 9999999999999;
+  z-index: 9999999999999999999999999999999;
   background: #fff;
   display: flex;
   align-items: center;
@@ -334,7 +334,7 @@ body {
   display: flex;
   right: 0;
   /* background: #fff; */
-  z-index: 9999999999;
+  z-index: 9999999;
   flex-direction: row-reverse;
   height: 100%;
 }
@@ -376,5 +376,5 @@ body {
 
 
 .item {
-  z-index: 999999999;
+  z-index: 99;
 }

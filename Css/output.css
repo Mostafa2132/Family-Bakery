@@ -866,10 +866,6 @@ select {
   right: 0px;
 }
 
-.right-6 {
-  right: 1.5rem;
-}
-
 .right-9 {
   right: 2.25rem;
 }
@@ -894,20 +890,12 @@ select {
   z-index: 50;
 }
 
-.z-\[99999999\] {
-  z-index: 99999999;
-}
-
 .z-\[99999\] {
   z-index: 99999;
 }
 
 .z-\[9999\] {
   z-index: 9999;
-}
-
-.z-\[999\] {
-  z-index: 999;
 }
 
 .-mx-3 {
@@ -2004,12 +1992,13 @@ select {
 
 body {
   overflow: hidden;
+  font-family: "Alegreya", serif;
 }
 
 .loading {
   position: fixed;
   inset: 0;
-  z-index: 9999999999999;
+  z-index: 9999999999999999999999999999999;
   background: #fff;
   display: flex;
   align-items: center;
@@ -2148,7 +2137,7 @@ body {
   display: flex;
   right: 0;
   /* background: #fff; */
-  z-index: 9999999999;
+  z-index: 9999999;
   flex-direction: row-reverse;
   height: 100%;
 }
@@ -2186,7 +2175,7 @@ body {
 }
 
 .item {
-  z-index: 999999999;
+  z-index: 99;
 }
 
 .hover\:scale-110:hover {

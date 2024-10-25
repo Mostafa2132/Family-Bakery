@@ -91,12 +91,12 @@ $(".side-inner span").click(function (e) {
 let sideInnerWidt = $(".side-inner").innerWidth();
 console.log(sideInnerWidt);
 
-$(".sideBar").animate({ right: -sideInnerWidt - 10 }, 0);
+$(".sideBar").animate({ right: -sideInnerWidt - 7 }, 0);
 
 $(".fa-gears").click(function () {
   let leftValue = $(".sideBar").css("right");
   if (leftValue == "0px") {
-    $(".sideBar").animate({ right: -sideInnerWidt - 10 }, 1000);
+    $(".sideBar").animate({ right: -sideInnerWidt - 7 }, 1000);
   } else {
     $(".sideBar").animate({ right: 0 }, 1000);
   }
