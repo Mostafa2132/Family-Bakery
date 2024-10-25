@@ -332,10 +332,10 @@ body {
   position: fixed;
   /* top: 30%; */
   display: flex;
-  right: 0;
+  left: 0;
   /* background: #fff; */
   z-index: 9999999;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   height: 100%;
 }
 
@@ -367,10 +367,9 @@ body {
   padding: 15px;
   cursor: pointer;
   font-size: 25px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  /* height: 400px; */
-  /* border-bottom-left-radius: 8px; */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
 }
 
 

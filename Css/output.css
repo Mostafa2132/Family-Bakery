@@ -882,12 +882,40 @@ select {
   top: 100%;
 }
 
+.bottom-\[70\%\] {
+  bottom: 70%;
+}
+
+.bottom-\[60\%\] {
+  bottom: 60%;
+}
+
+.bottom-\[40\%\] {
+  bottom: 40%;
+}
+
+.bottom-\[30\%\] {
+  bottom: 30%;
+}
+
+.bottom-\[10\%\] {
+  bottom: 10%;
+}
+
+.bottom-\[20\%\] {
+  bottom: 20%;
+}
+
 .z-20 {
   z-index: 20;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.z-\[999999\] {
+  z-index: 999999;
 }
 
 .z-\[99999\] {
@@ -921,6 +949,21 @@ select {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .\!me-1 {
@@ -973,6 +1016,14 @@ select {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .block {
@@ -1299,6 +1350,10 @@ select {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .truncate {
@@ -2135,10 +2190,10 @@ body {
   position: fixed;
   /* top: 30%; */
   display: flex;
-  right: 0;
+  left: 0;
   /* background: #fff; */
   z-index: 9999999;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   height: 100%;
 }
 
@@ -2168,10 +2223,8 @@ body {
   padding: 15px;
   cursor: pointer;
   font-size: 25px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  /* height: 400px; */
-  /* border-bottom-left-radius: 8px; */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .item {
@@ -2403,8 +2456,9 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-0 {
-    margin-top: 0px;
+  .sm\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .sm\:block {

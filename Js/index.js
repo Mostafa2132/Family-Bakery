@@ -1,6 +1,9 @@
-$(document).ready(function () {
-  $(".skitter-large").skitter();
-});
+
+if(location.pathname.includes('/blog.html')){
+  $(document).ready(function () {
+    $(".skitter-large").skitter();
+  });
+}
 
 if (location.pathname.includes("/index.html")) {
   window.addEventListener("scroll", function () {
@@ -10,11 +13,11 @@ if (location.pathname.includes("/index.html")) {
         boxshadow:
           "0 2px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);",
       });
-      $(".myBanner img").attr("src", "imgs/bakery-color.png");
-      $("#hs-navbar-example a").css("color", "#000");
+      $(".navbar-brand img").attr("src", "imgs/bakery-color.png");
+      $(".nav-item a").css("color", "#000");
     } else {
-      $(".myBanner img").attr("src", "imgs/bakery-light-1.png");
-      $("#hs-navbar-example a").css("color", "#fff");
+      $(".navbar-brand  img").attr("src", "imgs/bakery-light-1.png");
+      $(".nav-item a").css("color", "#fff");
       $(".nav").css({
         "background-color": "transparent",
         boxshadow:
@@ -89,15 +92,33 @@ $(".side-inner span").click(function (e) {
 });
 
 let sideInnerWidt = $(".side-inner").innerWidth();
-console.log(sideInnerWidt);
 
-$(".sideBar").animate({ right: -sideInnerWidt - 7 }, 0);
+$(".sideBar").animate({ left: -sideInnerWidt - 7 }, 0);
 
 $(".fa-gears").click(function () {
-  let leftValue = $(".sideBar").css("right");
+  let leftValue = $(".sideBar").css("left");
   if (leftValue == "0px") {
-    $(".sideBar").animate({ right: -sideInnerWidt - 7 }, 1000);
+    $(".sideBar").animate({ left: -sideInnerWidt - 7 }, 1000);
   } else {
-    $(".sideBar").animate({ right: 0 }, 1000);
+    $(".sideBar").animate({ left: 0 }, 1000);
   }
 });
+
+//-------------
+
+
+$(document).ready(function () {
+  AOS.init({
+    duration: 1200,
+    once: false,
+    delay: 400,
+  });
+})
+
+
+
+
+function toggleNavbar() {
+  const navbar = document.getElementById('hs-navbar-example');
+  navbar.classList.toggle('hidden');
+}
